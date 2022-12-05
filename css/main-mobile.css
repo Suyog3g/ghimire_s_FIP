@@ -1,18 +1,12 @@
 @charset "UTF-8";
-/* CSS Document */
-
-/*Remove this rule on your HTML elements as you start to fill them with content*/
 
 .box-color {
 	color: #fff;
 	background: #000;
 	text-align: center;
 	margin: 0;
+	
 }
-
-/*basic reset*/
-
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
 div,p,body,header,footer,section,article,nav { 
 	margin: 0; 
@@ -25,39 +19,24 @@ img {
 	padding: 0; 
 }
 
-/*html selectors*/
-
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Montserrat;;
 	font-size: 12px;
 }
-
-/* Remove underlines from links */
 
 a {
 	text-decoration: none;
 }
 
-/*hide elements from browser but show for doc outline*/
-
 .hidden {
 	display: none;
 }
-
-
-/*Common page elements  */
-
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 428px.
-428px would fit some phones. Sizes will vary depending on the projects
-you work on and the intended audience, we may go as low as 320px */
 
 #container {
 	margin: 0 auto;
 	width: 428px;
 }
 
-/* this is our grid based off of our XD file */
 .grid-con {
 	display: grid;
 	grid-template-columns: repeat(4, 85px);
@@ -67,7 +46,7 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #header-con {
-	background-color: #ddd;
+	background-color: #DB7C26;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -76,13 +55,19 @@ you work on and the intended audience, we may go as low as 320px */
 	grid-column: 1/3;
 }
 
+.header-logo {
+	width: 100px;
+	height: 50px;
+	margin: 10px 0 0 4px;
+}
+
 #mobile-nav {
 	grid-column: 4/-1;
 }
 
 .burger {
 	height: 16px;
-	background-color:#aaa;
+	background-color: black;
 	display: block;
 	margin-bottom: 10px;
 }
@@ -90,8 +75,13 @@ you work on and the intended audience, we may go as low as 320px */
 /* index page */
 
 #hero-con {
-	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
+	background-image: url(../images/hero-img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	background-position: center;
+	position: relative;
+	isolation: isolate;
 	height: 458px;
 }
 
@@ -100,49 +90,135 @@ you work on and the intended audience, we may go as low as 320px */
 	/* Remove as content will dictate height */
 	height: 380px;
 	margin-top: 20px;
+	width: 75%;
 }
 
+.hero-text::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: pink;
+	opacity: 0.7;
+}
+
+.hero-text h2 {
+	font-size: 50px;
+	text-decoration: underline;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.hero-text p{
+	font-size: 20px;
+}
+
+.button_hero {
+	width: 150px;
+	margin-top: 50px;
+	font-size: 20px;
+	position: relative;
+	background-color: #CB9F24;
+	color: white;
+	padding: 15px;
+	cursor: pointer;
+	border: none;
+	box-shadow: 2px 2px 1px rgb(112, 77, 77);
+}
+
+.button_hero:hover {
+	background-color: #f1b91e;
+}
+
+
 #image-slider-con {
-	background-color: #dddddd;
 	/* Remove as content will dictate height */
 	height: 640px;
 	position: relative;
 }
 
-#image-slider-con h2 {
-	background-color: #ffffff;
+.shoes {
+	width: 100%;
+}
+
+.product-cards h2 {
 	text-align: center;
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	margin: 0;
+	margin-bottom: 0;
+    font-size: 35px;
 }
 
 #mobile-slider-left {
 	position: absolute;
 	left: 0;
 	font-size: 120px;
-	color:#fff;
+	color:black;
 	top: 200px;
+}
+
+#mobile-slider-left:hover {
+	cursor: pointer;
+	opacity: 0.7;
 }
 
 #mobile-slider-right {
 	position: absolute;
 	right: 0;
 	font-size: 120px;
-	color:#fff;
+	color:black;
 	top: 200px;
 }
 
-#about-us-con h2 {
-	background-color: #ffffff;
-	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 70px;
-	margin: 0;
+#mobile-slider-right:hover {
+	cursor: pointer;
+	opacity: 0.7;
 }
 
-#about-us-text-con {
-	background-color: #dddddd;
+.product-box{
+    width: 100%;
+    height: 265px;
+    background-color: #E9C151;
+}
+
+.product-box h3{
+	font-size: 35px;
+	text-align: left;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+    padding: 20px 0 0 20px;
+}
+
+.product-box h5{
+	font-size: 20px;
+	text-align: left;
+    padding: 0 0 0 20px;
+	margin-top: 0;
+}
+
+.product-box p{
+	font-size: 30px;
+	text-align: left;
+	padding: 40px 0 0 20px;
+    font-style: bold;  
+}
+
+.join-us {
+	background-color: #D58440;
+}
+
+/* #join-us-text-con {
+    
+} */
+
+#about-us-con h2{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin: 0;
+	font-size: 35px;
 }
 
 #about-us-text {
@@ -150,25 +226,114 @@ you work on and the intended audience, we may go as low as 320px */
 	/* Remove as content will dictate height */
 	height: 580px;
 	margin-top: 70px;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
+}
+
+.join-text h3 {
+	font-size: 48px;
+	line-height: 0.5em;
+	margin-top: 0;
+	text-decoration: underline;
+}
+
+.join-text p {
+	font-size: 28px;
+	margin-top: 0;
+	padding-bottom: 10px;
+}
+
+.all-circle {
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+.circle1 {
+	background-color: grey;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 90px 0 0 30px;
+}
+
+.circle1 img{
+	position: absolute;
+	clip-path: circle(50%);
+	object-fit: cover;
+}
+
+.circle2 {
+	background-color: grey;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 30px 0 0 30px;
+}
+
+.circle2 img{
+	position: absolute;
+	clip-path: circle(50%);
+	object-fit: cover;
+	width: 350px;
+	height: 350px;
+}
+
+
+.circle3 {
+	background-color: grey;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 30px 0 0 30px;
+}
+
+.circle3 img{
+	position: absolute;
+	clip-path: circle(50%);
+	object-fit: cover;
+	width: 350px;
+	height: 350px;
+}
+
+
+.circle4 {
+	background-color: grey;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 30px 0 0 30px;
+}
+
+.circle4 img{
+	position: absolute;
+	clip-path: circle(50%);
+	object-fit: cover;
 }
 
 .about-us-photo {
 	grid-column: 1/-1;
 	display: block;
-	margin: 20px auto 0 auto;
+	background-color: #EDE734;
 }
 
 #contact-us-con {
-	margin-top: 100px;
-	margin-bottom: 60px;
+	margin-top: 0px;
+	padding: 10px 10px 10px 10px;
+	background-color: #FBF5E0;
 }
 
 #contact-text {
 	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 350px;
-	margin-bottom: 150px;
+	height: 350px;	
+}
+
+.contact-us h3 {
+	font-size: 45px;
+	line-height: 0.2em;
+}
+
+.contact-us p {
+	font-size: 23px;
 }
 
 #contact-form {
@@ -177,34 +342,110 @@ you work on and the intended audience, we may go as low as 320px */
 	height: 580px;
 }
 
+.text-box1 {
+	width: 80%;
+	height: 60px;
+	border: 2px solid black;
+	margin: 0 0 0 0;
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+.text-box2 {
+	width: 80%;
+	height: 60px;
+	border: 2px solid black;
+	margin: 20px 0 0 0;
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+.text-box3 {
+	width: 80%;
+	height: 60px;
+	border: 2px solid black;
+	margin: 20px 0 0 0;
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+.text-box4 {
+	width: 80%;
+	border: 2px solid black;
+	margin: 20px 0 0 0;
+	font-size: 30px;
+	padding: 16px 0 80px 20px;
+}
+
+.form-submit {
+	width: 180px;
+	margin-top: 40px;
+	font-size: 25px;
+	position: relative;
+	background-color: #512626;
+	color: white;
+	padding: 20px;
+	cursor: pointer;
+}
+
+
 /*Common page elements  */
 
 #footer-con {
-	height: 410px;
-	background-color: #aaa;
+	height: 300px;
+	background-color: #DB7C26;
 }
 
 #footer-box {
 	margin-top: 40px;
-	/* Remove as content will dictate height */
-	height:45px;
 	grid-column: 1/3;
-	background-color: #ddd;
+}
+
+.footer-logo{
+	padding: 10px 10px 10px 10px;
+	height: 50px;
+	width: 100px;
 }
 
 #footer-newsletter {
-	margin-top: 100px;
-	/* Remove as content will dictate height */
-	height:100px;
+	margin-top: 10px;
 	grid-column: 1/-1;
-	background-color: #ddd;
 }
+
+.footer-newsletter h3 {
+	font-size: 22px;
+	margin-right: 0;	
+}
+	
+.enter-email {	
+	width: 50%;
+	height: 35px;
+	margin-top: 0;
+	font-size: 20px;
+	padding-left: 10px;
+	margin-right: 0;		
+}
+
+.footer-submit {
+	width: 40%;
+	height: 40px;
+	font-size: 25px;
+	position: relative;
+	background-color: #512626;
+	color: white;
+	cursor: pointer;
+	float: right;
+	padding-left: 0;
+}
+
+
 
 /* gallery page */
 
 #hero-gallery-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(../img/hero-img-gallery.jpg) ;
+	background-size: cover;
 	height: 458px;
 }
 
@@ -213,6 +454,19 @@ you work on and the intended audience, we may go as low as 320px */
 	/* Remove as content will dictate height */
 	height: 350px;
 	margin-top: 20px;
+}
+
+.text-gallery h2{
+	font-size: 50px;
+	color: white;
+	line-height: 1em;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.text-gallery p{
+	font-size: 20px;
+	color: white;
 }
 
 #gallery-controls {
@@ -236,14 +490,94 @@ you work on and the intended audience, we may go as low as 320px */
 	grid-column: 1/-1;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	font-size: 30px;
+}
+
+.gallery-bumper1{
+	height: 6px; background-color: #E9C151;
+	width: 388px;
+	height: 6px;
+	transition: height 0.2s ease;
+	position: absolute;
+	
+}
+
+.gallery-box .hover-button {
+	opacity: 0;
+}
+
+.gallery-box:hover .gallery-bumper1 {
+	 height: 265px;
+	 opacity: 0.2;
 }
 
 .gallery-box {
-	grid-column: 1/-1;
-	background-color: #ddd;
+	background-color:  #E9C151 ;
+}
+
+.gallery-box:hover {
+	cursor: pointer;
+}
+
+.overlay {
+	position: absolute;
+	margin: 190px 0 0 260px;
+	opacity: 0;
+	transition: all 0.2s ease;
+	transform: translate(-50%, -50%);
+	
+}
+
+.gallery-box:hover .overlay {
+	opacity: 1;
+}
+
+.gal-hov-btn-1 {
+	width: 100px;
+	font-size: 25px;
+	margin-right: 10px;
+	position: relative;
+	background-color: #4a23f5;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	border: none;
+	box-shadow: 2px 2px 1px rgb(112, 77, 77);
+}
+
+.gal-hov-btn-1:hover {
+	background-color: #f1b91e;
+}
+
+.gallery-box h3 {
+	font-size: 40px;
+	text-align: left;
+	padding-left: 30px;
+	margin-bottom: 0;
+}
+
+.gallery-box h4 {
+	font-size: 20px;
+	text-align: left;
+	padding-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.gallery-box h5 {
+	font-size: 30px;
+	text-align: left;
+	padding-left: 30px;
+	margin: 60px 0 0 0;
+}
+
+.gallery-box {
+	background-color: #E9C151;
+	grid-column: span 4 / span 4;
 	/* Remove as content will dictate height */
 	height: 507px;
 	margin-bottom: 20px;
+	box-shadow: 5px 5px 12px;
 }
 
 #footer-newsletter2 {
