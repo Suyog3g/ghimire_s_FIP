@@ -1,76 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Web Page</title>
-<link href="css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="css/main.css"  rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Driball</title>
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon">
 </head>
-<!-- students must convert divs to semantic tags -->
+
 <body>
 	<div id="container">
-        
-        <div id="header-con">
+        <header id="header-con">
             <div id="main-header" class="grid-con">
-                <div id="header-box1" class="box-color">
-                </div>
-                <div id="main-nav" class="box-color">
-                </div>
-                <div id="header-box2" class="box-color">
-                </div>
+                <section id="header-box1" class="header-box1">
+                    <h2 class="hidden">Logo</h2>
+                    <img src="img/logo.svg" alt="logo">
+                </section>
+                <nav id="main-nav" class="main_nav">
+                    <ul>
+                        <li ><a class="active" href="">HOME</a></li>
+                        <li><a href="">SHOP</a></li>
+                        <li><a href="http://127.0.0.1:5501/gallery.html">ACCESSORIES</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </nav>
+                <section id="header-box2" class="box-color">
+                    <h2 class="hidden">Sign In</h2>
+                    <button class="button_nav">SIGN UP</button>  
+                </section>
             </div>
-        </div> 
+        </header> 
 
         <main>
             <div class="grid-con" id="hero">
-                <div id="hero-text" class="box-color">
-                </div>
-                <img src="https://via.placeholder.com/674x582" alt="image" id="hero-image">
+                <section id="hero-text" class="hero-text">
+                   <h2> Best In The Game.</h2> 
+                   <p> Grab some amazing deals on all of our sports equipments and jerseys. </p>
+                   <button class="button_hero">Shop Now</button> 
+                </section>
+                <aside id="hero-image">
+                    <img src="img/hero-image.jpg" alt="hero-image">
+                </aside>
             </div>  
-
+           
             <div class="grid-con" id="products">
-                <h2>Blandit At Tuctor</h2>
-                <div class="product-box" id="product1">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                <h2>Trending Now</h2>
+                <div class="product-box1" id="product1">
+                    <img src="img/worldcup-ball.jpg" alt="image">
+                    <section class="product-bumper1">
+                        <h3>FIFA Worldcup Ball</h3>
+                        <h4>Equipment</h4>
+                        <h5>$79.99</h5>
+                    </section>
+                    <section class="overlay">   
+                        <button class="hover-btn-1">View</button>                    
+                        <button class="hover-btn-1">Buy</button>                       
+                    </section>
                 </div>
-                <div class="product-box" id="product2">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                <div class="product-box2" id="product2">
+                    <img src="img/nba-jerseys.jpg" alt="image">
+                    <section class="product-bumper2">                  
+                        <h3>NBA Jerseys</h3>
+                        <h4>Clothing</h4>
+                        <h5>$66.67</h5>
+                    </section>  
+                    <section class="overlay">   
+                        <button class="hover-btn-2">View</button>                    
+                        <button class="hover-btn-2">Buy</button>                       
+                    </section>
                 </div>
-                <div class="product-box" id="product3">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                <div class="product-box3" id="product3">
+                    <img src="img/nike_shoes.jpg" alt="image">
+                    <section class="product-bumper3">
+                        <h3>NIKE's Zion 2</h3>
+                        <h4>Shoes</h4>
+                        <h5>$120.00</h5>
+                    </section>
+                    <section class="overlay">   
+                        <button class="hover-btn-3">View</button>                    
+                        <button class="hover-btn-3">Buy</button>                       
+                    </section>
                 </div>
             </div>
 
-            <h2 id="about-title">Blandit At Tuctor</h2>
-            <div id="about-con">
+            
+            <div id="join-con">
+                <h2 id="join-title">Join Us</h2>
                 <div class="grid-con" id="about">
-                    <div id="about-text" class="box-color">
-                    </div>
-                    <img src="https://via.placeholder.com/674x700" alt="image" id="about-image">
+                    <section id="join-text" class="join-text"> 
+                        <h3>BE PART OF OUR COMMUNITY</h3>
+                        <p> Join us and recieve exclusive updates on new products, get free standard shipping on all the products.</p> 
+                        <p>To help support athletes and players around the world, we are offering daily motivation and inspiration 
+                            on our member exclusive app.</p> 
+                        <button class="learn-more">Learn More</button> 
+                    </section>
+                    <section class="circle-part">
+                        <article class="circle1"></article>
+                        <article class="circle2"></article>
+                        <article class="circle3"></article>
+                        <article class="circle4"></article>
+                    </section>
                 </div>
             </div>
             
             <div class="grid-con" id="contact">
-                <div id="contact-text" class="box-color">
-                </div>
-                <div id="contact-form" class="box-color">
-                </div>
+                <section id="contact-text" class="contact-us">
+                    <h3>Feel free to contact us</h3>
+                    <p>
+                        Email us with any question or inquiry or call us at 519-406-5589.
+                        We would be happy to answer your question and set up a meeting with you. 
+                        Dribble easily with Driball.
+                    </p>
+                </section>
+                <aside id="contact-form" class="contact-form">
+                    <input class="text-box1" type="text" placeholder="Name">
+                    <input class="text-box2" type="text" placeholder="Phone no.">
+                    <input class="text-box3" type="text" placeholder="Email">
+                    <input class="text-box4" type="text" placeholder="Subject">
+                    <button class="form-submit">Submit</button> 
+                </aside>
             </div> 
         </main>
 
-        <div id="footer-con">
+        <footer id="footer-con">
             <div class="grid-con" id="footer">
-                <div id="footer-logo" class="box-color">
-                </div>
-                <div id="footer-nav" class="box-color">
-                </div>
-                <div id="footer-newsletter1" class="box-color">
-                </div>
-                <div id="footer-newsletter2" class="box-color">
-                </div>
-                <div id="footer-social" class="box-color">
-                </div>
+                <section id="footer-logo" class="footer-logo">
+                    <img src="img/logo.svg" alt="logo">
+                </section>
+                <nav id="footer-nav" class="footer-nav">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">SHOP</a></li>
+                        <li><a href="">ACCESSORIES</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </nav>
+                <section id="footer-newsletter1" class="newsletter-box">
+                    <h3>Newsletter - Sign Up</h3>
+                    <input class="enter-email" type="text" placeholder="Enter your email...">
+                </section>
+                <aside id="footer-newsletter2" class="foot-sumbit">
+                    <button class="footer-submit">Submit</button> 
+                </aside>
+                <nav id="footer-social" class="social-media">
+                    <img class="insta" src="img/facebook_logo.svg" alt="facebook">
+                    <img class="facebook" src="img/instagram_logo.svg" alt="instagram">
+                    <img class="mail" src="img/email.svg" alt="email">
+                </nav>
             </div>
-        </div>
+        </footer>
 
     </div> 
 </body>
