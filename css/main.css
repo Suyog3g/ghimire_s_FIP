@@ -887,7 +887,7 @@ a:hover::after {
 #gallery h2 {
 	grid-column: 1/-1;
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
@@ -897,7 +897,7 @@ a:hover::after {
 	grid-column: span 4 / span 4;
 	/* Remove as content will dictate height */
 	height: 507px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	box-shadow: 5px 5px 12px;
 }
 

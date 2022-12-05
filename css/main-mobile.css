@@ -209,10 +209,6 @@ a {
 	background-color: #D58440;
 }
 
-/* #join-us-text-con {
-    
-} */
-
 #about-us-con h2{
 	text-align: center;
 	padding-top: 40px;
@@ -514,6 +510,7 @@ a {
 .gallery-box {
 	background-color:  #E9C151 ;
 }
+
 
 .gallery-box:hover {
 	cursor: pointer;
