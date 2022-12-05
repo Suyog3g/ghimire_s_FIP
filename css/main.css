@@ -958,10 +958,11 @@ a:hover::after {
 }
 
 .gallery-box h3 {
-	font-size: 40px;
+	font-size: 35px;
 	text-align: left;
 	padding-left: 30px;
 	margin-bottom: 0;
+	margin-top: 20px;
 }
 
 .gallery-box h4 {
@@ -973,8 +974,8 @@ a:hover::after {
 }
 
 .gallery-box h5 {
-	font-size: 30px;
+	font-size: 35px;
 	text-align: left;
 	padding-left: 30px;
-	margin: 60px 0 0 0;
+	margin: 80px 0 0 0;
 }
